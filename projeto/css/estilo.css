@@ -1,0 +1,143 @@
+body {
+    width: 100%;
+    max-width: 800px; /* O site só cresce até 800 */
+    margin: auto;
+    background-image: url('../img/empresa.png');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: white;
+}
+
+/* Imagem da Página Estilo de vida */
+.estilovida {
+    width: 100%;
+    max-width: 800px; /* O site só cresce até 800 */
+    margin: auto;
+    background-image: url('../img/lixos.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'lato';
+    line-height: 1.5;   
+    color: white;
+}
+/* Fim Imagem da Página Estilo de vida */
+
+
+/* Imagem Notícias */
+.novo {
+    width: 100%;
+    max-width: 800px; /* O site só cresce até 800 */
+    margin: auto;
+    background-image: url('../img/mesas.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'lato';
+    line-height: 1.5;   
+    color: white;
+}
+/* Imagem notícia */
+
+.turismo {
+    width: 100%;
+    max-width: 800px; /* O site só cresce até 800 */
+    margin: auto;   
+    background-image: url('../img/viajemaoglobo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'lato';
+    line-height: 1.5;
+    color: white;
+}
+
+.eventos {
+    width: 100%;
+    max-width: 800px; /* O site só cresce até 800 */
+    margin: auto;
+    background-image: url('../img/2184224-grupo-de-pessoas-cuidar-sobre-ecologia-e-salvar-planeta-garotas-e-homens-limpar-para-a-terra-e-proteger-natureza-plana-ilustracaoial-vetor.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'lato';
+    line-height: 1.5;
+    color: white;
+}
+
+
+main {
+    background: #00000054;
+    padding: 5px 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.logo,
+.empresa-name,
+.headline {
+    margin: 0px;
+    text-align: center;
+}
+
+/* Tamanho do parágrafo Página Empresa*/
+.empresagiz{
+    font-size: 18px;
+}
+/*  Fim Tamanho do parágrafo Página Empresa*/
+
+p {
+    font-size: 24px; /* Tamanho da fonte */
+   
+}
+
+
+/* Página Boas Práticas */
+#descarte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #descarte img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+
+
+.projetos {
+    margin: 30px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.projetos table {
+    background-color: rgba(189, 6, 6, 0.721);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+/* Botão de voltar notícias */
+.name-link {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00B300;
+    color: #fff;
+    text-decoration: none;
+    font-family: "Press Start 2P", sans-serif;
+    font-size: 16px;
+    border-radius: 30px;
+    border: 5px solid #004D00;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease-in-out;
+}
+.name-link:hover {
+    transform: translateY(-5px);
+    background-color: #004D00;
+    border-color: #00B300;
+}
+/* Fim Botão de voltar notícias */

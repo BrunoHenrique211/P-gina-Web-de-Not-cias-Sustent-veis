@@ -1,0 +1,820 @@
+*{
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: #f1f6fc31; 
+}
+
+section,
+footer {
+    padding: 54px 0;
+}
+
+h3{
+    font-size: 50px;
+}
+
+p{
+    color: #0000009c;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.btn{
+    background-color: rgb(12, 216, 12);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.1s;
+}
+
+.btn.animate-btn{
+    animation: animate-outline 1s ease-out infinite;
+}
+
+.btn:hover{
+    background-color: rgb(67, 214, 22);
+}
+
+@keyframes animate-outline {
+    from{
+        outline: 0px solid #1db80f;
+}
+    to{
+        outline: 15px solid #00ff005d;
+}
+
+}
+
+header{
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav ul a{
+    color: rgb(255, 255, 255);
+    margin: 0 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+}
+
+nav ul a:not(.btn):after{
+    content: "";
+    background-color: rgb(10, 219, 10);
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+
+nav ul a:hover::after{
+    width: 100%;
+}
+
+nav .menu-icon{
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+    display: none;
+}
+
+nav .close-icon{
+    display: none;
+    font-size: 30px;
+    color: white;
+}
+
+
+.banner{
+    display: flex;
+    justify-content: center;
+}
+
+.banner .banner-text{
+    margin: 150px;
+    text-align: center;
+    padding: 0 90px;
+}
+
+.banner .banner-text h1{
+    font-size: 96px;
+    color: rgb(255, 255, 255);
+}
+
+.banner .banner-text p{
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: lighter;
+    margin: 18px 0;
+}
+
+.faca-mais .container{
+    display: flex;
+    align-items: center;
+}
+
+.faca-mais .faca-mais-text{
+    width: 50%;
+    padding: 0 40px;
+}
+
+.faca-mais .faca-mais-text h3{
+    font-size: 56px;
+}
+
+.faca-mais .faca-mais-text p{
+    margin: 5px 0 13px 0;
+}
+
+.faca-mais .faca-mais-img{
+    width: 50%;
+}
+
+.faca-mais .faca-mais-img img{
+    width: 100%;
+}
+
+.depoimentos h3{
+    text-align: center;
+}
+
+.depoimentos p{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cards{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.depoimentos .card-item{
+    background-color: #24ad3b;
+    margin: 15px;
+    border-radius: 14px;
+    text-align: center;
+    width: 350px;
+    transition: 0.3s;
+}
+
+.depoimentos .card-item img{
+    border-radius: 100%;
+    width: 80px;
+    display: block; 
+    margin: 10px auto;
+}
+
+.depoimentos .card-item .nome-user{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+.depoimentos .card-item .depoimento-user{
+    font-size: 15px;
+    padding: 0 15px;
+    transition: 0.3s;
+}
+.depoimentos .card-item .estrelas{
+    margin: 15px 0;
+    border-top: 2px solid #175508a6 ;
+}
+.depoimentos .card-item .estrelas i{
+    color:  #c2eb0a;
+    margin: 15px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+.depoimentos .card-item:hover{
+    background-color: #023601;
+    margin-top: -5px;
+}
+.depoimentos .card-item:hover .nome-user,
+.depoimentos .card-item:hover .depoimento-user,
+.depoimentos .card-item:hover .estrelas i{
+    color: white;
+}
+.clientes h3,
+.clientes p{
+    text-align: center;   
+}
+.clientes .container div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer{
+    background-color: #1de70b;
+    text-align: center;
+}
+.footer i{
+    color:  #1de70b;
+    font-size: 19px;
+    background-color: white;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 10px;
+}
+.footer p{
+   margin-top: 10px;
+   color: white; 
+}
+/*Página de Notícias */
+.noticias .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.noticias .noticias-text{
+    width: 50%;
+    padding-right: 40px;
+}
+.noticias .noticias-text p{
+    margin: 18px;
+    color: #000000a6;
+}
+.noticias .noticias-img{
+    width: 5%;
+}
+/* Trocando a cor da letra do Título */
+.container .banner h1{
+    color: white; 
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #113702;
+}
+/* Fim da troca letra do Título */
+.noticias .noticias-img img{
+    width: 80%;
+    border-radius: 10px;
+}
+
+/* end Página de Notícias */
+
+/* Página servicos */
+.servicos h3{
+    text-align: center;
+}
+
+.servicos .container > p{
+    text-align: center;
+}
+
+.servicos .rows-cards{
+   display: flex;
+   justify-content: center;
+   margin-top: 20px; 
+   flex-wrap: wrap;
+}
+
+.servicos .row-card-item{
+    background-color: rgba(21, 255, 0, 0.76);
+    width: 350px;
+    padding: 20px;
+    border-radius: 14px;
+    margin: 20px;
+    transition: 0.3s;
+}
+
+.servicos .row-card-item:hover{
+    background-color: #057003;
+}
+
+.servicos .row-card-item:hover p{
+    color: white;
+}
+
+.servicos .row-card-item img{
+    background-color: #10eb0d;
+    border-radius: 14px;
+    width: 100px;
+    padding: 9px;
+}
+
+.servicos .row-card-item p.nome-servico{
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+.servicos .row-card-item p.descricao-servico{
+    transition: 0.3s;
+}
+
+/* Dados Sobre o que já Fizemos */
+.dados{
+    background: #85ff83;
+}
+
+.dados .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.dados .dados-item{
+    text-align: center;
+    margin: 15px;
+    
+    color: #000000be;
+}
+.dados .dados-item img{
+    background-color: #10eb0d;
+    border-radius: 14px;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 80px;
+}
+
+.dados .dados-item p{
+    font-size: 18px;
+}
+
+.dados .dados-item p strong{
+    font-size: 28px;
+} 
+/* End Página Servicos */
+
+/* Página de contato */
+.contato-info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.contato-info .left-side{
+    width: 50%;
+    padding: 30px;
+    background-color: #10eb0d;
+    border-radius: 14px;
+    margin-right: 50px;
+    height: fit-content;
+}
+.contato-info .left-side div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.contato-info .left-side div i{
+    font-size: 24px;
+    margin-right: 20px;
+    color: white;
+}
+.contato-info .left-side p{
+    font-size: 17px;
+    color: white;
+}
+.contato-info .right-side{
+    width: 50%;
+}
+.contato-info .right-side input{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 47px;
+    padding: 15px;
+    border-radius: 9px;
+    transition: 0.3s;
+    border: 1px solid #f1f1f1;
+    color: #212121;
+    font-weight: lighter;
+}
+.contato-info .right-side input:focus,
+.contato-info .right-side textarea:focus{
+    border-color: #10eb0d;
+}
+.contato-info .right-side textarea{
+    border: 1px solid #f1f1f1;
+    color: #212121;
+    border-radius: 9px;
+    margin-bottom: 10px;
+    padding: 15px;
+    width: 100%;
+    transition: 0.3s;
+    resize: none;
+}
+.contato-info .right-side button{
+    border: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mário */
+
+.game-board{
+    width: 100%;
+    height: 500px;
+    border-bottom: 15px solid rgb(35,160,35);
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#87CEEB, #E0F6FF);
+}
+
+.pipe {
+    position: absolute;
+    bottom: 0px;
+    width: 80px;
+    animation: pipe-animation 2s infinite linear;
+}
+
+.mario {
+    width: 80px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.jump {
+    animation: jump 500ms ease-out;
+}
+
+.clouds {
+    position: absolute;
+    width: 550px;
+    animation: clouds-animation 20s infinite linear;
+}
+
+
+@keyframes pipe-animation{
+    from{
+        right: -80px;
+    }
+
+    to{
+        right: 100%;
+    }
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0px;
+    }   
+    
+    40% {
+        bottom: 180px;
+    }
+
+    50% {
+        bottom: 180px;
+    }
+
+    60% {
+        bottom: 180px;
+    }
+
+    100%{
+        bottom: 0px;
+    }
+}
+
+@keyframes clouds-animation {
+    from{
+        right:-550px;
+    }
+    to{
+        right: 100%;
+    }
+}
+
+/* Botão de voltar página Divirta-se */
+
+a.mario-link {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00B300;
+    color: #fff;
+    text-decoration: none;
+    font-family: "Press Start 2P", sans-serif;
+    font-size: 16px;
+    border-radius: 30px;
+    border: 5px solid #004D00;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  a.mario-link:hover {
+    transform: translateY(-5px);
+    background-color: #004D00;
+    border-color: #00B300;
+}
+/* Fim Botão de voltar página Divirta-se */
+
+/* Voltar Página de Login */
+.name-link {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00B300;
+    color: #fff;
+    text-decoration: none;
+    font-family: "Press Start 2P", sans-serif;
+    font-size: 16px;
+    border-radius: 30px;
+    border: 5px solid #004D00;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease-in-out;
+}
+
+.name-link:hover {
+    transform: translateY(-5px);
+    background-color: #004D00;
+    border-color: #00B300;
+}
+/* Fim Voltar Página de Login */
+
+/* Estilos para telas menores que 768px */
+@media screen and (max-width: 768px) {
+    .game-board {
+        height: 300px;
+    }
+    
+    .mario {
+        width: 100px;
+    }
+    
+    .pipe {
+        width: 50px;
+    }
+    
+    .clouds {
+        width: 350px;
+    }
+}
+
+/* End Mário */
+
+/* Página de notícias */
+.center {
+    display: flex;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+    flex-wrap: wrap;
+  }
+  
+  .about-header {
+    width: 100%;
+    background-color: #10eb0d;
+  }
+  
+  .about-header p {
+    color: white;
+    padding: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  header h2 span {
+    color: #10eb0d;
+  }
+  
+  header h2 {
+    font-size: 35px;
+    color: black;
+  }
+  
+  .logo {
+    margin-top: 10px;
+  }
+  
+  .wraper-header {
+    padding: 40px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .banner-ads {
+    width: 60%;
+    height: 100px;
+    background-color: #222;
+    position: relative;
+  }
+  
+  .banner-ads h2 {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: white;
+    font-size: 15px;
+    font-style: italic;
+  }
+  
+  .menu-main {
+    width: 100%;
+    background-color: #10eb0d;
+    padding: 8px;
+  }
+  
+  .menu-main a {
+    display: inline-block;
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .menu-main a:hover {
+    text-decoration: underline;
+    color: #023601;
+  }
+  
+  .noticias-wraper-1 {
+    display: flex;
+    width: 100%;
+  }
+  
+  .noticia-destaque {
+    width: 80%;
+    padding-top: 20%;
+    border: 0px solid white;
+    position: relative;
+  }
+  
+  .noticia-destaque-single {
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 98%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    border: 3px solid rgb(0, 0, 0);
+  }
+
+  .noticia-destaque-single h3 {
+    padding: 5px;
+    color: white;
+    width: 100%;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .outras-noticias-1 {
+    display: flex;
+    width: 40%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 3px solid rgb(0, 0, 0);
+  }
+  
+  .outras-noticias-1-single {
+    cursor: pointer;
+    width: 48%;
+    padding-top: 30%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .outras-noticias-1-single h3 {
+    font-size: 21px;
+    padding: 5px;
+    color: white;
+    width: 100%;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+/* Fim página de notícias */
+
+@media(max-width: 830px){
+    .ul{
+        position: fixed;
+        top: 0;
+        left:0;
+        background: rgb(50, 252, 0);
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        clip-path: circle(0% at 100% 0);
+        transition: 0.7s;
+}
+    .ul.open{
+        clip-path: circle(139.1% at 98% 1%);
+}
+    .ul a{
+        margin: 10px 0;
+        font-size: 16px;
+}
+    nav .menu-icon{
+       display: block; 
+}
+    nav .close-icon{
+        display: block;
+        position: absolute;
+        top: 66px;
+        right: 140px;
+}
+    /* Página Home Responsiva */
+.faca-mais .faca-mais-img{
+    margin-top: 10px;
+    padding: 0 20px;
+    order: 1;
+}
+
+.faca-mais .container{
+    flex-direction: column;
+}
+
+.faca-mais .faca-mais-text h3{
+    font-size: 48px;
+}
+
+.faca-mais .faca-mais-text,
+.faca-mais .faca-mais-img{
+    width: 100%;
+}
+
+/* Banner Resposivo */
+.banner .banner-text{
+    padding: 0;
+    margin: 80px;
+}
+
+.banner .banner-text h1{
+    font-size: 80px;
+}
+
+.banner .banner-text p{
+    font-size: 15px;
+}
+
+.depoimentos .card-item{
+    width: 100%;
+}
+
+/* Pagina de Noticias Responsiva */
+.noticias .container{
+    flex-direction: column-reverse;
+}
+
+.sobre .sobre-img,
+.sobre .sobre-text{
+    width: 100%;    
+}
+
+.sobre.sobre-text{
+    margin-top: 40px;
+}
+
+/* Pagina de Contato Responsiva*/
+.contato .contato-info{
+    flex-direction: column-reverse;
+}
+
+.contato-info .right-side,
+.contato-info .left-side{
+    width: 100%;
+}
+
+.contato-info .right-side{
+    margin-bottom: 30px;
+}
+
+}
+
+@media (max-width:500px){
+.banner .banner-text h1{
+    font-size: 50px;
+} 
+
+.faca-mais .faca-mais-text h3{
+    font-size: 40px;
+}
+
+}
